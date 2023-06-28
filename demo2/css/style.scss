@@ -472,7 +472,7 @@ header {
     border: 1px solid transparent; /* ボーダーの色と太さ */
     font-weight: bold;
     height: 60px;
-    border-radius: 24px;
+    border-radius: 40px;
     text-align: center;
     outline: none;
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
@@ -598,8 +598,11 @@ header {
   }
   .fa-solid::before {
     padding: 20px;
-    border: 1px solid #222;
+    border: 1px solid transparent;
     border-radius: 50%;
+    transition: 0.4s all;
+    background: #fff;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     @media (max-width: 767px) {
       padding: 15px;
@@ -755,7 +758,7 @@ section.slider .more-slider a.button:before {
   border: 1px solid transparent; /* ボーダーの色と太さ */
   margin: 0 auto;
   height: 60px;
-  border-radius: 24px;
+  border-radius: 40px;
   background: #fff;
   text-align: center;
   outline: none;
@@ -916,7 +919,7 @@ section.slider .more-slider a.button:before {
           border: 1px solid transparent; /* ボーダーの色と太さ */
           height: 60px;
           gap: 10px;
-          border-radius: 24px;
+          border-radius: 40px;
           text-align: center;
           outline: none;
           box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
@@ -1088,7 +1091,6 @@ section.slider .more-slider a.button:before {
         width: 100%;
         height: 100%;
 
-        border: 1px solid #598dfc;
         position: absolute;
         top: 0;
         left: 0;
@@ -1177,6 +1179,10 @@ footer {
         display: flex;
         flex-direction: column;
         row-gap: 20px;
+        align-items: flex-end;
+        @media (max-width: 767px) {
+          align-items: flex-start;
+        }
       }
       .btn {
         /*アニメーションの起点とするためrelativeを指定*/
@@ -1185,7 +1191,7 @@ footer {
         /*ボタンの形状*/
         text-decoration: none;
         display: flex;
-        margin-left: auto;
+        margin: 0;
         background: #fff;
         max-width: 270px;
         font-weight: bold;
@@ -1194,7 +1200,7 @@ footer {
         width: 100%;
         border: 1px solid transparent; /* ボーダーの色と太さ */
         height: 60px;
-        border-radius: 24px;
+        border-radius: 40px;
         text-align: center;
         outline: none;
         box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
@@ -1313,6 +1319,9 @@ footer {
           position: absolute;
           left: -6px;
         }
+      }
+      .mb30 {
+        margin-bottom: 30px;
       }
     }
   }
